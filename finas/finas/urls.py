@@ -19,5 +19,7 @@ from . import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('lustra/', include('finatic.urls')),
     path('', views.HomePage.as_view(), name='home')
 ]
+
