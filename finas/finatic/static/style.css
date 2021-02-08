@@ -2,11 +2,11 @@
     box-sizing: border-box;
 }
 
-/*body{*/
-/*    background-color: black;*/
-/*}*/
-
 h1{
     color: blue;
 }
 
+.navbar-brand {
+    font-family: 'Pacifico', cursive;
+    font-size: 30px;
+}
