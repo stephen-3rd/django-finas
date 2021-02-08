@@ -5,9 +5,8 @@
 {% block content %}
 
     {% for lustr in lust_page %}
-        <div>
-            <img src="{{ lustr.picture.url }}" alt="">
-            <h1>{{ lustr.title }}</h1>
+        <div class="row">
+            <img src="{{ lustr.picture.url }}" alt="images" style="width:100%; height: auto;">
         </div>
     {% endfor %}
 
