@@ -3,4 +3,9 @@
 {% block title %}{% endblock %}
 
 {% block content %}
+
+    {% for lustr in lust_page %}
+        <h1>{{ lustr.title }}</h1>
+    {% endfor %}
+
 {% endblock %}

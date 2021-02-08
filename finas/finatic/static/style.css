@@ -2,6 +2,11 @@
     box-sizing: border-box;
 }
 
-body{
-    background: red;
+/*body{*/
+/*    background-color: black;*/
+/*}*/
+
+h1{
+    color: blue;
 }
+
