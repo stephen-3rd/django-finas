@@ -5,7 +5,10 @@
 {% block content %}
 
     {% for lustr in lust_page %}
-        <h1>{{ lustr.title }}</h1>
+        <div>
+            <img src="{{ lustr.picture.url }}" alt="">
+            <h1>{{ lustr.title }}</h1>
+        </div>
     {% endfor %}
 
 {% endblock %}
