@@ -6,7 +6,9 @@
 
     {% for lustr in lust_page %}
         <div class="row">
-            <img src="{{ lustr.picture.url }}" alt="images" style="width:100%; height: auto;">
+            <div class="column">
+                <img src="{{ lustr.picture.url }}" alt="images" width="100%">
+            </div>
         </div>
     {% endfor %}
 
