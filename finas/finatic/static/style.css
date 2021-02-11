@@ -8,7 +8,6 @@
     display: grid;
     place-items: center center;
     font-family: 'Poppins', sans-serif;
-    font-weight: bold;
 }
 
 .navbar-brand {
@@ -75,7 +74,10 @@ img {
     padding: 20px 10px;
 }
 
-
+.details>h3{
+    color: black;
+    font-weight: 600;
+}
 
 
 
