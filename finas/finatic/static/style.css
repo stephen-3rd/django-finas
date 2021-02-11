@@ -77,10 +77,16 @@ img {
 .details>h3{
     color: black;
     font-weight: 600;
-    font-size: 18px;
+    font-size: 1.5rem;
     margin: 10px 0 15px 0;
 }
 
+.details>p{
+    color: black;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 400;
+}
 
 
 
