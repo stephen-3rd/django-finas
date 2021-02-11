@@ -7,8 +7,16 @@
 {% for lustr in lust_page %}
     <section id="facilities">
         <div class="container">
-            <div class="title">
-
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card text-center">
+                        <img src="{{ lustr.picture.url }}" alt="image" class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="card-title">{{ lustr.title }}</h3>
+                            <p class="card-text">{{ lustr.snippet }}</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
