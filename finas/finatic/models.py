@@ -27,6 +27,6 @@ class Lust(models.Model):
         return self.title
 
     def snippet(self):
-        return self.description[:10] + '...'
+        return self.description[:10] + '  [...]'
 
 
