@@ -7,7 +7,8 @@
     {% for lustr in lust_page %}
         <div class="row">
             <div class="column">
-                <img src="{{ lustr.picture.url }}" alt="images" width="100%">
+                <a href="{% url 'finatic:detail' lustr.slug%}"><img src="{{ lustr.picture.url }}" alt="images" width="100%"></a>
+
             </div>
         </div>
     {% endfor %}

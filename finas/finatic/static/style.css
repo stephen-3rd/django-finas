@@ -1,6 +1,6 @@
 *{
     box-sizing: border-box;
-    background-color: black;
+    /*background-color: black;*/
 }
 
 h1{
@@ -24,19 +24,29 @@ h1{
     letter-spacing: 2px;
 }
 
+img{
+    height: 15vw;
+}
+
 .row {
   /*display: -ms-flexbox;*/
-  display: flex;
+  /*display: flex;*/
   /*-ms-flex-wrap: wrap;*/
-  flex-wrap: wrap;
-  padding: 0 4px;
+  /*flex-wrap: wrap;*/
+    display: inline-grid;
+    padding: 0 4px;
+    margin: 20px;
+    width: 33.3%;
+    float: right;
 }
 
 .column {
   /*-ms-flex: 25%;*/
-  flex: 25%;
-  max-width: 25%;
-  padding: 0 4px;
+  /*flex: 25%;*/
+  /*max-width: 25%;*/
+  padding: 10px;
+    margin: 10px;
+    justify-content: center;
 }
 
 .column img {

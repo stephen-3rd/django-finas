@@ -13,5 +13,6 @@ class LustView(generic.ListView):
 
 class LustDetail(generic.DetailView):
     model = Lust
+    context_object_name = 'lust_detail'
     template_name = 'finatic/lust_detail.html'
 
