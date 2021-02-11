@@ -7,7 +7,13 @@
 {% for lustr in lust_page %}
     <div class="cards">
         <div class="card card1">
-            <img src="{{ lustr.picture.url }}" alt="">
+            <div class="container">
+                <img src="{{ lustr.picture.url }}" alt="images">
+            </div>
+            <div class="details">
+                <h3>{{ lustr.title }}</h3>
+                <p>{{ lustr.snippet }}</p>
+            </div>
         </div>
     </div>
 {% endfor %}
