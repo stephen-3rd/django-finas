@@ -4,7 +4,12 @@
 
 {% block content %}
 
-    <h1>{{ lust_detail.title }}</h1>
-    <p>{{ lust_detail.description }}</p>
+<div class="card" style="width: 18rem;">
+    <img class="card-img-top" src="{{ lust_detail.picture.url }}" alt="Card image cap">
+    <div class="card-body">
+        <h5 class="card-title">{{ lust_detail.title }}</h5>
+        <p class="card-text">{{ lust_detail.description }}</p>
+    </div>
+</div>
 
 {% endblock %}

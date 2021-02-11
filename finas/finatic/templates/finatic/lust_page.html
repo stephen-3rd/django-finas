@@ -4,13 +4,22 @@
 
 {% block content %}
 
-    {% for lustr in lust_page %}
-        <div class="row">
-            <div class="column">
-                <a href="{% url 'finatic:detail' lustr.slug%}"><img src="{{ lustr.picture.url }}" alt="images" width="100%"></a>
-
-            </div>
+{% for lustr in lust_page %}
+    <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="{{ lustr.picture.url }}" alt="Card image cap">
+        <div class="card-body">
+            <h5 class="card-title">{{ lustr.title }}</h5>
+            <p class="card-text">{{ lustr.snippet }}</p>
+<!--            <a href="{% url 'finatic:detail' lustr.slug %}" class="btn btn-primary">Read More</a>-->
         </div>
-    {% endfor %}
+    </div>
+{% endfor %}
 
 {% endblock %}
+
+<!--<div class="row">-->
+<!--    <div class="column">-->
+<!--        <a href="{% url 'finatic:detail' lustr.slug%}"><img src="{{ lustr.picture.url }}" alt="images" width="100%"></a>-->
+
+<!--    </div>-->
+<!--</div>-->
