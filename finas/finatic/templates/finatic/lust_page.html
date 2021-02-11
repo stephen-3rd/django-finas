@@ -13,9 +13,9 @@
                 <img src="{{ lustr.picture.url }}" alt="image" class="card-img-top">
                 <div class="card-body">
                     <h3 class="card-title">{{ lustr.title }}</h3>
-                    <p class="card-name">{{ lustr.date | date:'M d Y' }}</p>
+                    <p class="card-name">{{ lustr.date | date:'M d Y' }} - {{ lustr.time }}</p>
                     <p class="card-text">{{ lustr.snippet }}</p>
-                    <a href="#">Read More</a>
+                    <a href="{% url 'finatic:detail' lust_detail.slug %}">Read More</a>
                 </div>
             </div>
         </div>
