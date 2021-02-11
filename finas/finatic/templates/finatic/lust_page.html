@@ -5,20 +5,7 @@
 {% block content %}
 
 {% for lustr in lust_page %}
-<div class="container">
-    <div class="row">
-        <div class="col-lg-6 mb-4">
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="{{ lustr.picture.url }}" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">{{ lustr.title }}</h5>
-                    <p class="card-text">{{ lustr.snippet }}</p>
-                    <a href="{% url 'finatic:detail' lustr.slug %}" class="btn btn-primary">Read More</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+
 {% endfor %}
 
 
