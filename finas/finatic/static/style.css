@@ -95,6 +95,12 @@
 }
 
 
+.card-body a{
+    text-decoration: none;
+}
+.card{
+    margin: 20px 10px;
+}
 
 
 
