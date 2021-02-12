@@ -17,6 +17,7 @@
                     <p class="card-name">{{ lustr.date | date:'M d Y' }} - {{ lustr.time }}</p>
                     <p class="card-text">{{ lustr.snippet }}</p>
                     <a href="{% url 'finatic:detail' lustr.slug %}" class="card-link">Read More &raquo;</a>
+                    <a href="#" class="card-link">Delete</a>
                 </div>
             </div>
         </div>
