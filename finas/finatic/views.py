@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.views import generic
+from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from .models import Lust
 
 # Create your views here.
@@ -15,4 +16,9 @@ class LustDetail(generic.DetailView):
     model = Lust
     context_object_name = 'lust_detail'
     template_name = 'finatic/lust_detail.html'
+
+
+class CreateLustr(CreateView):
+    model = Lust
+    fiels = ['title', 'picture', 'description', 'slug', 'status']
 
