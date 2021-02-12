@@ -1,5 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
+from django.urls import reverse
 # Create your models here.
 
 STATUS = (
@@ -22,6 +23,9 @@ class Lust(models.Model):
     class Meta:
         ordering = ['-time']
         # Class Meta was created so as to sort post by date in descending Order(Latest will appear first)
+
+    def get_absolute_url(self):
+        return reverse('finatic:detail', args=[str(self)])
 
     def __str__(self):
         return self.title

@@ -18,7 +18,7 @@ class LustDetail(generic.DetailView):
     template_name = 'finatic/lust_detail.html'
 
 
-class CreateLustr(CreateView):
+class CreateLust(CreateView):
     model = Lust
-    fiels = ['title', 'picture', 'description', 'slug', 'status']
+    fields = ['title', 'slug', 'picture', 'description', 'status', 'author']
 
