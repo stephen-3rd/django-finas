@@ -16,7 +16,7 @@
             <img src="{{ lust_detail.picture.url }}" alt="">
           <div class="card-body">
             <h1 class="card-title">{{ lust_detail.title }}</h1>
-              <p class="card-text text-muted h6">{{ lust_detail.date | date:'M d Y' }} | {{ lust_detail.time }}</p>
+              <p class="card-text text-muted h6">{{ lust_detail.date | date:'M d Y' }} - {{ lust_detail.time }}</p>
             <p class="card-text" id="jff">{{ lust_detail.description | safe }}</p>
           </div>
         </div>
