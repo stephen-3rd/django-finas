@@ -20,7 +20,7 @@ class Lust(models.Model):
     status = models.IntegerField(choices=STATUS, default=1)
 
     class Meta:
-        ordering = ['-date']
+        ordering = ['date']
         # Class Meta was created so as to sort post by date in descending Order(Latest will appear first)
 
     def __str__(self):
