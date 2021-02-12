@@ -24,6 +24,11 @@ class CreateLust(CreateView):
     fields = ['title', 'slug', 'picture', 'description', 'status', 'author']
 
 
-class UpdateLust(CreateView):
+class UpdateLust(UpdateView):
     model = Lust
     fields = ['title', 'slug', 'picture', 'description', 'status', 'author']
+
+
+class DeleteLust(DeleteView):
+    model = Lust
+    success_url = reverse_lazy('finatic:list')
