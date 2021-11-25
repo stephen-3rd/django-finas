@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.views import generic
 from django.views.generic.edit import CreateView, UpdateView, DeleteView
-from django.urls import reverse_lazy
+from django.urls import reverse, reverse_lazy
 from .models import Lust
 
 # Create your views here.
@@ -22,6 +22,7 @@ class LustDetail(generic.DetailView):
 class CreateLust(CreateView):
     model = Lust
     fields = ['title', 'slug', 'picture', 'description', 'status', 'author']
+    success_url = reverse_lazy('finatic:list')
 
 
 class UpdateLust(UpdateView):
