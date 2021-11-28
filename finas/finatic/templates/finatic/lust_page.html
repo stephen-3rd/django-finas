@@ -1,11 +1,11 @@
 {% extends 'base.html' %}
 
-{% block title %}Lustr{% endblock %}
+{% block title %}Ikiyegha Stephen{% endblock %}
 
 {% block content %}
 
 
-<div class="container">
+<!-- <div class="container">
     <div class="row">
         {% for lustr in lust_page %}
         <div class="col-md-4">
@@ -23,11 +23,29 @@
         </div>
         {% endfor %}
     </div>
+</div> -->
+<div class="parent">
+    {% for lustr in lust_page %}
+    <div class="cont">
+            <div class="icont">
+                <div class="img">
+                    <img src="{{ lustr.picture.url }}" alt="images" width="300px" height="200px">
+                </div>
+                <div class="body">
+                    <h3>{{ lustr.title }}</h3>
+                    <p>Published by: {{ lustr.author }}</p>
+                    <p>{{ lustr.date | date:'M d Y' }} - {{ lustr.time }}</p>
+                    <p>{{ lustr.snippet }}</p>
+                </div>
+                <div class="button">
+                    <a href="{% url 'finatic:detail' lustr.slug %}">Read More</a>
+                    <a href="{% url 'finatic:delete' lustr.slug %}" class="delete">Delete</a>
+                </div>
+            </div>
+    </div>
+    {% endfor %}
 </div>
 
-<div>
-    <p>This is going to contain the Reach me page.</p>
-</div>
 
 {% endblock %}
 

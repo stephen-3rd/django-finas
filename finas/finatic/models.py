@@ -30,7 +30,7 @@ class Lust(models.Model):
         return self.title
 
     def snippet(self):
-        return self.description[:10] + '  [...]'
+        return self.description[:10] + '  ...'
 
 class ReachMe(models.Model):
     name = models.CharField(max_length=300, blank=False)
